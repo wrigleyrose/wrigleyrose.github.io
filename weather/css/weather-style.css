@@ -1,0 +1,145 @@
+/* Document showing my css for the weather page */
+
+/* **************************
+* 1. Imports
+* 2. General Styles (layout, nav, etc)
+    * 2a. Layout
+* 3. Mobile Styles
+    * 3a. Layout
+* 4. Large Styles
+    * 4a. Layout
+*************************** */
+
+/* ******************
+1. Imports
+******************** */
+/* get the fonts from google */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+/* import normalize style sheet */
+@import url ('normalize.css');
+
+/* ****************************
+* 2. General Styles
+**************************** */
+
+* {
+ box-sizing: border-box; /* changes width property
+    to total width instead of content width */
+}
+*:before, *:after{
+ box-sizing: border-box;
+}
+
+#logo {
+    float: left;
+}
+
+#site-brand {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+body {
+ margin: 0; /* remove any margin from body */
+ padding: 0; /* ditto for padding */
+ font-family: helvetica, arial, sans-serif;
+ font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: sansita, georgia, serif;
+    font-size= 2em;
+}
+
+header {
+    background-color: beige;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:active {
+    text-decoration: none;
+    color: darkgray;
+}
+
+main {
+    background-color: #FFF;
+}
+
+#curWeather {
+    background-image: url("/weather/images/plan-images/plan-images/sunny-winter.jpg");
+    background-size: cover;
+}
+
+#temps {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;  
+}
+
+#wind {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#video {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+footer {
+    margin-bottom: 3em;
+    background-color: beige;
+}
+/* **************************************
+* 3. Mobile Styles
+************************************** */
+
+nav > ul li {
+ display: inline-block;
+ list-style: none;
+} 
+
+#nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: beige;
+}
+
+#smallConditions {
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px
+}
+
+#video {
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+
+
+
+

@@ -5,36 +5,67 @@
   <title>The Weather Site</title>
   <meta name="description" content="Web page showing the weather stats for Franklin, ID.">
   <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/weather/css/weather-style.css" media="screen"> 
  </head>
- <body>  
-<header>
-    <img src="images/plan-images/plan-images/logo.jpeg" alt="headr logo">
- <h1>The Weather Site</h1>
+    
+<body> 
+    
+<div>
+<header id="page-header">
+    <div id="logo"><img src="/weather/images/plan-images/plan-images/logo.jpeg" alt="umbrella weather logo"></div>
+    <p id="site-brand">The Weather Site</p>
 </header>
-<nav>
-   <ul>
-    <li><a href="/weather/franklin-weather-page.html" title="Go to home page">Home</a></li>
+<div id="nav">
+    <nav>
+    <ul>
+    <li><a href="/weather/franklin-weather-page.html" title="Go to home page">Home | </a></li>
     <li><a href="#" title="Go to search page">Search | </a></li>
-    <li><a href="#" title="Go to Franklin page">Franklin</a></li>
-    <li><a href="#" title="Go to Greenville page">Greenville</a></li>
-    <li><a href="#" title="Go to Springfeild page">Springfield</a></li>
-   </ul>
+    <li><a href="/weather/franklin-weather-page.html" title="Go to Franklin page">Franklin | </a></li>
+    <li><a href="#" title="Go to Greenville page">Greenville | </a></li>
+    <li><a href="#" title="Go to Springfield page">Springfield</a></li>
+    </ul>
 </nav>
+</div>
+</div>
+     
 <main>
+    
 <h1>Franklin, Idaho</h1>
-    <p><b>Zip:</b> 83237 | <b>Elevation:</b>4501 ft. | <b>Location:</b> 42.0135 N, 111.8071 W</p>
+    <section id="locationInfo">
+        <p><b>Zip:</b> 83237 | 
+        <b>Elevation:</b> 4501 ft. |
+        <b>Location:</b> 42.0135 N, 111.8071 W</p>
+    </section>
+    
+    <!-- curWeather holds temps, wind, and video data -->
+        <div id="curWeather">
+        <!-- smallConditions holds temp, wind data -->
+        <div id="smallConditions">
+            
+    <section id="temps">
 <h2>Temperature</h2>
-    <p><b>24 F</b> <br>
-    34 F 21 F <br>
-    Feels like 21 F</p>
+    <p><b>24 &deg;F</b> <br>
+        <b>High:</b> 34 &deg;F | <b>Low:</b> 21 &deg;F <br>
+        <b>Feels Like:</b> 21 &deg;F
+    </p>
+    </section>
+    <section id="wind">
 <h2>Wind</h2>
-    <p>N <br>
-    2 MPH <br>
-    <b>Direction:</b> NW <br>
-    <b>Gusts:</b> 5 MPH</p>
+        <p> <b>N 2 MPH</b> <br>
+        <b>Direction:</b> NW <br>
+        <b>Gusts:</b> 5 MPH </p>
+    </section>
+        </div>
+    <section id="video">
 <h2>Video Forecast</h2>
-    <p><b>Hourly Forecast</b> <br>
-    12am: 21 F | 1am: 21 F | 2am: 21 F | 3am: 20 F | 4am: 20 F | 5am: 20 F | 6am: 20 F | 7am: 21 F | 8am: 21 F </p>
+        <video></video>
+    </section>
+        </div>
+    <section id="hourly">
+    <h2>Hourly Forecast</h2>
+    <p>
+    12am: 21 &deg;F | 1am: 21 &deg;F | 2am: 21 &deg;F | 3am: 20 &deg;F | 4am: 20 &deg;F | 5am: 20 &deg;F | 6am: 20 &deg;F | 7am: 21 &deg;F | 8am: 21 &deg;F </p>
+    </section>
 </main>
 <footer>
  &copy;2018 - The Weather Site
