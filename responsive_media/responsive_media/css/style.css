@@ -51,8 +51,9 @@ h1 {
 
 .page-header {
     background-image: url(/responsive_media/responsive_media/images/nps-logo-small.png), url(/responsive_media/responsive_media/images/grand-canyon-small-optimized.gif);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: bottom right, left, right;
+    background-position: 98% 50%, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
 }
 
 
@@ -175,9 +176,10 @@ h1 {
 	}
 	/*	Background Images - Use with medium screens */
 	.page-header {
-            background-image:url(/responsive_media/responsive_media/images/nps-logo-medium-optimized.gif), url(/responsive_media/responsive_media/images/grand-canyon-medium-optimized.gif);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: bottom right, left, right;
+        background-image:url(/responsive_media/responsive_media/images/nps-logo-medium-optimized.gif), url(/responsive_media/responsive_media/images/grand-canyon-medium-optimized.gif);
+        background-position: 98% 50%, left top;
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto, cover;
     }
 	.page-nav {
 		position: relative;
@@ -225,8 +227,9 @@ h1 {
 	/*	Background Images - Use with large screens */
 	.page-header {
     background-image: url(/responsive_media/responsive_media/images/nps-logo-large-optimized.gif), url(/responsive_media/responsive_media/images/grand-canyon-banner-optimized.gif);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: bottom right, left, right;
+    background-position: 98% 50%, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
     }
 	.page-nav li {
 		flex: 0 1 10%;
