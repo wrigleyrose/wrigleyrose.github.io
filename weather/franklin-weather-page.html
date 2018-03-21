@@ -1,95 +1,92 @@
 <!doctype html>
 <html lang="en-us">
- <head>
-  <meta charset="UTF-8">
-  <title>The Weather Site</title>
-  <meta name="description" content="Web page showing the weather stats for Franklin, ID.">
-  <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="/weather/css/weather-style.css" media="screen"> 
- </head>
-    
-<body> 
-    
-<div>
-<header id="page-header">
-    <div id="logo"><img src="/weather/images/plan-images/plan-images/logo.jpeg" alt="umbrella weather logo"></div>
-    <p id="site-brand">The Weather Site</p>
-</header>
-<div id="nav">
-    <nav>
-    <ul>
-    <li><a href="/index.html" title="Go to home page">Home | </a></li>
-    <li><a href="#" title="Go to search page">Search | </a></li>
-    <li><a href="/weather/franklin-weather-page.html" title="Go to Franklin page">Franklin | </a></li>
-    <li><a href="/weather/greenville-weather-page.html" title="Go to Greenville page">Greenville | </a></li>
-    <li><a href="#" title="Go to Springfield page">Springfield</a></li>
-    </ul>
-</nav>
-</div>
-</div>
-     
-<main>
-    
-<h1>Franklin, Idaho</h1>
-    <section id="locationInfo">
-        <p><b>Zip:</b> 83237 | 
-        <b>Elevation:</b> 4501 ft. |
-        <b>Location:</b> 42.0135 N, 111.8071 W</p>
-    </section>
-    
-    <!-- curWeather holds temps, wind, and video data -->
-        <div id="curWeather">
-        <!-- smallConditions holds temp, wind data -->
-        <div id="smallConditions">
-            
-    <section id="temps">
-<h2>Temperature</h2>
-        <p id="curTemp"><b>24 &deg;F</b></p>
-        <p><span id="hi">34&deg;F</span> <span id="lo">21&deg;F</span></p>
-        <p id="feelTemp">Feels Like 21 &deg;F</p>
-    </section>
-            
-    <section id="wind">
-<h2>Wind</h2>
-        <div>
-            <p>N</p>
-        </div>
-        <div id="windDial" class="n">
-        </div>
-        
-            <p id="windSpeed">2 mph</p>
-        
-        <ul id = "windInfo">
-            <li><b>Direction:</b> NW</li>
-            <li><b>Gusts:</b> 5mph</li>
-        </ul>
-    </section>
-        </div>
-            
-    <section id="video">
-<h2>Video Forecast</h2>
-        <img src="/weather/images/plan-images/plan-images/index.png" alt="video of current weather">
-    </section>
-        </div>
-    <section id="hourly">
-    <h2>Hourly Forecast</h2>
-    <ul>
-        <li>12am: 21 &deg;F</li>
-        <li>1am: 21 &deg;F<li>
-        <li>2am: 21 &deg;F</li>
-        <li>3am: 20 &deg;F</li>
-        <li>4am: 20 &deg;F </li>
-        <li>5am: 20 &deg;F</li> 
-        <li>6am: 20 &deg;F </li>
-        <li>7am: 21 &deg;F </li>
-        <li>8am: 21 &deg;F</li>
-    </ul>
-    </section>
-</main>
-    <hr>
-<footer>
- &copy;2018 - The Weather Site
-</footer>
-    <script src="/weather/js/function.js"></script>
- </body>
-</html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Franklin, ID | Weather Site</title>
+    <meta name="description" content="Franklin, ID Weather Web Site.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/weather/css/weather-page-franklin.css" type="text/css" media="screen">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div id="siteN">
+                <img id="logo" src="/weather/images/plan-images/plan-images/logo.jpeg" alt="logo">
+                <h2 id="siteB">The Weather Site</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html" title="Go to home page">Home | </a></li>
+                    <li><a href="/weather/index.html" title="Go to search page">Current | </a></li>
+                    <li><a href="/weather/franklin-weather-page.html" title="Go to Franklin page">Franklin | </a></li>
+                    <li><a href="/weather/greenville-weather-page.html" title="Go to Greenville page">Greenville | </a></li>
+                    <li><a href="#" title="Go to Springfield page">Springfield</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1 id="city">Franklin, Idaho</h1>
+            <section id="locationInfo">
+                <ul>
+                    <li><b>Zip:</b> 83237</li>
+                    <li><b>Elevation:</b> 4501 ft.</li>
+                    <li><b>Location:</b> 42.0135&deg;N, 111.8072&deg;W</li>
+                </ul>
+            </section>
+            <section id="curW">
+                <div id="smallConditions">
+                    <section id="temps">
+                        <h2>Temperature</h2>
+                        <ul id="temp">
+                            <li>24&#8457;</li>
+                            <li id="temp2">34F</li>
+                            <li id="temp3">21F</li>
+                            <li>Feels like <span id="feelT">218</span></li>
+                        </ul>
+                    </section>
+
+                    <section id="wind">
+                        <h2>Wind</h2>
+                        <ul>
+                            <li>N</li>
+                            <li id="circle"><img id="dial" class="E" src="/weather/images/plan-images/plan-images/wind-pointer.png" alt="wind pointer circle"></li>
+                            <li id="mph">2mph</li>
+                            <li id="direction"><b>Direction:</b> NW</li>
+                            <li id="gusts"><b>Gusts:</b> 5mph</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <section id="video">
+                    <h2>Video Forecast</h2>
+                    <img src="/weather/images/plan-images/plan-images/index.png" alt="Current Footage of the weather">
+                </section>
+            </section>
+            <section id="panel-bar">
+                <ul id="panel">
+                    <li><span id="last">Favorites</span></li>
+                </ul>
+            </section>
+
+
+            <section id="hourly">
+                <div id="arrowPosition">
+                    <h3>Hourly Forecast</h3>
+                </div>
+                <ul>
+                    <li>12am:21&deg;F</li>
+                    <li>1am:20&deg;F</li>
+                    <li>3am:20&deg;F</li>
+                    <li>4am:20&deg;F</li>
+                    <li>5am:20&deg;F</li>
+                    <li>6am:20&deg;F</li>
+                </ul>
+            </section>
+        </main>
+        <footer>&copy;2018 Weather Site</footer>
+    </div>
+    <script src="/Weather/JS/function.js"></script>
+</body>

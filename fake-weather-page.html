@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Current Location</title>
+        <meta name="description" content="Weather forecast for user's current location, current weather information, hourly forecast">
+        <meta name="viewport" content="width=device-width">
+        <link href="/fake-weather-css.css" rel="stylesheet" type="text/css" media="screen">
+    </head>
+    <body>
+        <div id="full-body">
+            <header>
+                <div id="branding">
+                    <img src="/weather/images/plan-images/plan-images/logo.jpeg" id="logo" alt="site logo">
+                    <h1 id="site-brand"><i>The Weather Site</i></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/index.html" title="Return to main home page.">Home</a></li>
+                        <li><a href="/weather/index.html" title="Go to Current Location.">Current</a></li>
+                        <li><a href="/weather/franklin-weather-page.html" title="Go to the Franklin, Idaho weather page.">Franklin</a></li>
+                        <li><a href="/weather/greenville-weather-page.html">Greenville</a></li>
+                        <li>Springfield</li>
+                    </ul>
+                </nav>
+            </header>
+            <p id="status"></p>
+            <main id="main" class="hide">
+                <h1 id="full-location">Current Location</h1>
+                <section id="location-info">
+                    <h2>Location Info</h2>
+                    <dl>
+                        <dt><b>Zip:</b></dt>
+                        <dd id="zip">83237 | </dd>
+                        <dt><b>Elevation:</b></dt>
+                        <dd id="elevation">4501ft. | </dd>
+                        <dt><b>Location:</b></dt>
+                        <dd id="location">42.0135&#176; N, 111.8072&#176; W</dd>
+                    </dl>
+                </section>
+                <div id="curWeather" class="clear">
+                    <div id="smallConditions">
+                        <section class="container" id="small-temps-and-winds">
+                            <section id="small-temp">
+                                <h2>Temperature</h2>
+                                <p id="small-cur-temp">24&#176;F</p>
+                                <p><span id="small-hi">34&deg;F</span><span id="small-lo">21&deg;F</span></p>
+                                <p id="small-feels">Feels Like 21&deg;F</p>
+                            </section>
+                            <section id="small-wind">
+                                <h2>Wind</h2>
+                                <div id="small-wind-info">
+                                    <p id="small-north-point">N</p>
+                                    <img src="weather/images/plan-images/plan-images/wind-pointer.png" id="small-wind-pointer" alt="wind direction pointer" class="nw">
+                                    <p id="small-wind-speed">2 mph</p>
+                                </div>
+                                <div id="small-wind-direction">
+                                    <p id="small-wind-dir"><b>Direction:</b> SW</p>
+                                    <p id="small-gusts"><b>Gusts:</b> 5mph</p>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="container" id="small-cond-icon">
+                            <h2 id="small-cond-heading">Condition</h2>
+                            <p id="small-icon-pos">Insert Icon Here</p>
+                        </section>
+                    </div>
+                    <div id="largeConditions">
+                        <section id="temps" class="container">
+                            <h2>Temperature</h2>
+                            <p id="cur-temp">24&#176;F</p>
+                            <p><span id="hi">34&deg;F</span><span id="lo">21&deg;F</span></p>
+                            <p id="feels">Feels Like 21&deg;F</p>
+                        </section>
+                        <section id="winds" class="container">
+                            <h2>Wind</h2>
+                            <div id="wind-info">
+                                <p id="north-point">N</p>
+                                <img src="/weather/images/plan-images/plan-images/wind-pointer.png" id="wind-pointer" alt="wind direction pointer" class="nw">
+                                <p id="wind-speed">2 mph</p>
+                            </div>
+                            <div id="wind-direction">
+                                <p id="wind-dir">Direction: SW</p>
+                                <p id="gusts">Gusts: 5mph</p>
+                            </div>
+                        </section>
+                        <section class="container" id="cond-icon">
+                            <h2 id="cond-heading">Condition</h2>
+                            <p id="icon-pos">Insert Icon Here</p>
+                        </section>
+                    </div>
+                </div>
+                <section id="hourly" class="container">
+                    <h2>Hourly Forecast</h2>
+                    <ul>
+                        <li>12am: 21&deg;F</li>
+                        <li>1am: 21&deg;F</li>
+                        <li>2am: 20&deg;F</li>
+                        <li>3am: 20&deg;F</li>
+                        <li>4am: 20&deg;F</li>
+                        <li>5am: 20&deg;F</li>
+                        <li>6am: 20&deg;F</li>
+                    </ul>
+                </section>
+            </main>
+            <footer id="page-footer">
+               &copy;2018 Weather Site <img src="/weather/images/plan-images/plan-images/wundergroundLogo_4c_rev.png"> 
+            </footer>
+        </div>
+        <script src="/weather/js/functions.js"></script>
+        <script src="/weather/js/geo_loc.js"></script>
+    </body>
+
+</html>
