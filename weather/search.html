@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Current Location</title>
+    <title>Search</title>
     <meta name="description" content="Weather forecast for user's current location, current weather information, hourly forecast">
     <meta name="viewport" content="width=device-width">
     <link href="/weather/css/weather-style.css" rel="stylesheet" type="text/css" media="screen">
@@ -21,13 +21,21 @@
             <nav>
                 <ul>
                     <li><a href="/index.html" title="Go to home page">Home </a></li>
-                    <li><a href='search.html' title='go to search page'>Search</a></li>
+                    <li><a href="/weather/search.html" title='go to search page'>Search</a></li>
                     <li><a href="/weather/index.html" title="Go to search page">Current </a></li>
                     <li><a href="/weather/franklin-weather-page.html" title="Go to Franklin page">Franklin </a></li>
                     <li><a href="/weather/greenville-weather-page.html" title="Go to Greenville page">Greenville </a></li>
                     <li><a href="#" title="Go to Springfield page">Springfield</a></li>
                 </ul>
             </nav>
+
+            <section>
+                <form method="get" action="https://wunderground.com/" id="searchForm">
+                    <input type="search" name="query" id="query">
+                    <input type="submit" name="submit" value="Search" id="send">
+                </form>
+                <div id="searchResults"></div>
+            </section>
         </header>
         <p id="status"></p>
         <main id="main" class="hide">
@@ -113,7 +121,7 @@
         </footer>
     </div>
     <script src="/weather/js/functions.js"></script>
-    <script src="/weather/js/geo_loc.js"></script>
+    <script src="/weather/js/search.js"></script>
 </body>
 
 </html>
