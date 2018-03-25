@@ -42,15 +42,17 @@ searchResults.innerHTML = list;
 
 const search = document.getElementById('searchResults');
 
-search.addEventListener('click', function () {
+search.addEventListener('click', function() {
+    
     let locationCity = event.target.dataset.location;
     
     console.log(locationCity);
     
     getData(locationCity);
     
+    document.getElementById('searchResults').style.display = 'none';
     document.getElementById('searchform').addEventListener('click', function() {
-        document.getElementById('searchResults').style.display = 'block';
+    document.getElementById('searchResults').style.display = 'block';
     })
 })
     
