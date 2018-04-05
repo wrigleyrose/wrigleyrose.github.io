@@ -1,0 +1,46 @@
+body {
+    background-image: url("/images/site/background.jpg");
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: crimson;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 11px 11px;
+    text-decoration: none;
+}
+
+#white {
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    margin: 0px 70px 50px 70px;
+}
+
+#content {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    padding-bottom: 11px;
+}
+
+footer {
+    text-align: center;
+    background-color: beige;
+    font-family: Helvetica, sans-serif;
+}
+
+#logo {
+    width: 400px;
+}
