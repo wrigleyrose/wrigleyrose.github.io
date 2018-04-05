@@ -1,5 +1,21 @@
+/******************************************
+1. General Template
+2. Mobile
+3. Large
+**************************************/
+
+
+/*********************** General **********************/
+* {
+box-sizing: border-box; 
+}
+*:before, *:after
+{
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url("/images/site/background.jpg");
+    background-image: url("/acme/images/site/background.jpg");
     justify-content: center;
 }
 
@@ -23,6 +39,26 @@ li a {
     text-decoration: none;
 }
 
+/*unvisited link*/
+a:link {
+    color: white;
+}
+
+/*visited link*/
+a:visited {
+    color: black;
+}
+
+/*hovering*/
+a:hover {
+    color: #808080;
+}
+
+/*selected*/
+a:active {
+    color: #0000ee;
+}
+
 #white {
     background-color: white;
     font-family: Helvetica, sans-serif;
@@ -43,4 +79,14 @@ footer {
 
 #logo {
     width: 400px;
+}
+
+/******************** Large ***************************/
+
+@media screen and (min-width: 750px) {
+    
+    
+    
+    
+    
 }
