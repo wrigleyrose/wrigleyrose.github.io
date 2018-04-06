@@ -22,11 +22,12 @@ main {
     min-width: 600px;
 }
 
-.main-cont {
+
+.content {
     width: auto;
 }
 
-.picture {
+.pic {
     background-image: url('/acme/images/site/feature.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -36,38 +37,37 @@ main {
     justify-content: flex-end;
 }
 
-.picture img {
+.pic img {
     max-width: 230px;
 }
 
-.feat {
+.rint {
     height: 400px;
     padding-right: 35px;
 }
 
-#fhead {
+#rheader {
     font-size: 28px;
 }
 
-.flist {
+.rlist {
     font-size: 20px;
     list-style: none;
     padding-left: 0;
 }
 
-.main-cont h1 {
+.content h1 {
     font-size: 40px;
     text-align: center;
 }
-
-#nav {
+#page-nav {
     background-color: #de2226;
     bottom: 0;
     left: 0;
     width: 100%;
 }
 
-#nav ul {
+#page-nav ul {
     display: flex;
     align-items: stretch;
     height: 2.5em;
@@ -76,13 +76,13 @@ main {
     list-style: none;
 }
 
-#nav li {
+#page-nav li {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-#nav a {
+#page-nav a {
     text-decoration: none;
     color: #ffffff;
     display: flex;
@@ -91,9 +91,10 @@ main {
     align-items: center;
 }
 
-#nav a:hover {
+#page-nav a:hover {
     background-color: #ffffff;
     color: #000;
+
 }
 
 .wrapper {
@@ -112,7 +113,7 @@ main {
     margin: 0 auto;
 }
 
-#feat-recs {
+#featured {
     margin-left: 16px;
 }
 
@@ -121,35 +122,35 @@ main {
     margin-left: 10px;
 }
 
-.main-display {
-    display: flex;
-    flex-flow: row nowrap;
+.blockDisplay{
+    display : flex;
+    flex-flow : row nowrap;
     justify-content: space-between;
 }
 
-#recs-cont {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
-    width: 25em;
+#recipe-content {
+display : flex;
+flex-flow : row wrap;
+list-style : none;
+width : 25em;
 }
 
-.yum {
-    border-left-width: 20px;
-    border-right-width: 20px;
-    border-bottom-width: 4px;
-    border-color: lightgray;
-    border-style: solid;
-    width: 5em;
+.eat {
+border-left-width : 20px;
+border-right-width : 20px;
+border-bottom-width : 4px;
+border-color : lightgray;
+border-style : solid;
+width : 5em;
 }
 
 figure {
-    width: 31%;
-    text-align: center;
-    margin: 10px;
+width : 31%;
+text-align : center;
+margin : 10px;
 }
 
-.body-cont {
+.container {
     background-color: #ffffff;
     width: 90%;
     margin-left: auto;
@@ -169,11 +170,12 @@ figure {
     clear: left;
 }
 
-.left-links {
+
+.left_article {
     background-color: #ffffff;
     width: 50%;
     /*float: left;*/
-    font-family: Helvetica, sans-serif;
+    font-family: "Source Sans Pro";
     color: #343434;
     padding-bottom: 18px;
 }
@@ -182,7 +184,7 @@ figure {
     display: none;
 }
 
-.main-cont .left-links h1 {
+.container .left_article h1 {
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 5%;
@@ -192,61 +194,60 @@ figure {
 }
 
 #reviews {
-    width: 400px;
+width : 400px;
 }
 
 #reviews h3 {
-    margin-top: 1px;
-    margin-bottom: 1px;
+margin-top : 1px;
+margin-bottom : 1px;
 }
 
-#right-links {
+#right_article {
     width: 45%;
     background-color: #ffffff;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Chelsea Market', cursive;
 }
-
-#products {
+#product-content {
     display: flex;
 }
 
-#description {
+#prod-description {
     height: 300px;
     background-repeat: no-repeat;
     list-style: none;
     justify-content: flex-end;
     margin-left: 8%;
     padding-right: 8%
+
 }
 
-#pzone {
+#product-zone {
     display: flex;
     flex-direction: row;
     flex-grow: 3;
 }
 
-#products h1 {
+#product-content h1 {
     font-size: 40px;
 }
-
-#pimage {
+#prod-image {
     height: 350px;
     width: 60%;
     background-repeat: no-repeat;
     background-size: contain;
     padding-left: 33%;
-}
 
-#pfooter {
-    background-color: beige;
-    /*color: #000000;*/
+}
+#page-footer {
+    background-color: #ffffff;
+    color: #000000;
     padding: .5em;
     margin-bottom: 2em;
     font-size: 13px;
     text-align: center;
 }
 
-#pfooter p {
+#page-footer p {
     margin: 0;
 }
 
@@ -258,20 +259,23 @@ noscript {
     padding-top: 25px;
     padding-bottom: 25px;
 }
-
 .copyright {
     text-align: center;
     color: black;
     font-weight: lighter;
     letter-spacing: 2px;
     border-top-width: 2px;
-    font-family: Helvetica, sans-serif;
+    font-family: "Source Sans Pro";
 }
 
 
-/*Large Screen*/
 
+
+/*Large Screen*/
 @media only screen and (max-width: 1000px) {
+    
+    
+
     #body {
         display: flex;
         font-size: 18px;
@@ -282,6 +286,7 @@ noscript {
         margin: auto;
         font-family: sans-serif;
     }
+
     #page {
         display: flex;
         flex-flow: column;
@@ -293,15 +298,18 @@ noscript {
         width: 80%;
         min-width: 600px;
     }
+    
     #wel {
         text-align: left;
         margin: 0.25em 0;
     }
-    .main-cont {
+
+    .content {
         width: auto;
     }
-    .picture {
-        background-image: url('/acme/images/site/feature.jpg');
+
+    .main-picture {
+        background-image: url('images/site/feature.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         max-width: 950px;
@@ -309,29 +317,36 @@ noscript {
         display: flex;
         justify-content: flex-end;
     }
-    .picture img {
+
+    .pic img {
         max-width: 227px;
     }
-    .fhead {
+
+    .rint {
         height: 250px;
         padding-right: 15px;
     }
-    .flist {
+
+    .rlist {
         font-size: 15px;
         list-style: none;
         padding-left: 0;
+
     }
-    .main-cont h1 {
+
+    .content h1 {
         font-size: 40px;
         text-align: center;
     }
-    #nav {
+
+    #page-nav {
         background-color: #de2226;
         bottom: 0;
         left: 0;
         width: 100%;
     }
-    #nav ul {
+    
+    #page-nav ul {
         display: flex;
         align-items: stretch;
         height: 2.5em;
@@ -339,62 +354,77 @@ noscript {
         padding: 0;
         list-style: none;
     }
-    #nav li {
+
+    #page-nav li {
         flex: 1;
         display: flex;
         justify-content: center;
         font-size: 20px;
     }
-    #nav a {
+
+    #page-nav a {
         text-decoration: none;
         color: #ffffff;
         display: flex;
         flex: 1;
         justify-content: center;
         align-items: center;
+
     }
-    #nav a:hover {
+
+    #page-nav a:hover {
         background-color: #ffffff;
         color: #000;
     }
+
     .wrapper {
         display: flex;
     }
+
     .wrapper div {
         display: flex;
         flex-direction: column;
         margin: 3%;
         text-align: center;
     }
+
     .wrapper div img {
         width: 70px;
         margin: 0 auto;
     }
-    #right-links {
+
+    #right_article {
         width: 370px;
     }
-    #right-links h3 {
+
+    #right_article h3 {
         margin-top: -14px;
         margin-bottom: -10px;
     }
-    .main-display {
+
+    .blockDisplay {
         display: flex;
         flex-flow: row wrap;
     }
+
     #recipes {
         width: 500px;
+
     }
+
     #recipes h3 {
         margin: 5px 0 -5px 0;
     }
-    #feat-recs {
+
+    #recipe-content {
         display: flex;
         flex-flow: row wrap;
         list-style: none;
-        flex-grow: 1;
+            flex-grow: 1;
         width: 25em;
     }
-    .yum {
+
+    .eat {
         border-left-width: 20px;
         border-right-width: 20px;
         border-bottom-width: 4px;
@@ -402,12 +432,14 @@ noscript {
         border-style: solid;
         width: 5em;
     }
+
     figure {
         width: 30%;
         text-align: center;
         margin: 8px;
     }
-    .main-cont {
+
+    .container {
         background-color: #ffffff;
         width: 90%;
         margin-left: auto;
@@ -418,6 +450,7 @@ noscript {
         padding-right: 0px;
         padding-bottom: 0px;
     }
+
     .secondary_header {
         width: 100%;
         padding-top: 20px;
@@ -425,7 +458,8 @@ noscript {
         background-color: #ff0000;
         clear: left;
     }
-    .left-links {
+
+    .left_article {
         background-color: #ffffff;
         width: 60%;
         float: left;
@@ -433,10 +467,12 @@ noscript {
         color: #343434;
         padding-bottom: 15px;
     }
+
     .noDisplay {
         display: none;
     }
-    .main-cont .left-links h1 {
+
+    .container .left_article h1 {
         padding-left: 5%;
         padding-right: 5%;
         margin-top: 5%;
@@ -444,15 +480,18 @@ noscript {
         font-weight: bold;
         text-transform: uppercase;
     }
-    .right-links {
+
+    .right_article {
         width: 40%;
         float: left;
         background-color: #ffffff;
     }
-    #products {
+
+    #product-content {
         display: flex;
     }
-    #description {
+
+    #prod-description {
         height: 150px;
         background-repeat: no-repeat;
         list-style: none;
@@ -460,45 +499,54 @@ noscript {
         margin-left: 4%;
         padding-right: 4%
     }
-    #pzone {
+
+    #product-zone {
         display: flex;
         flex-direction: row;
         flex-grow: 3;
     }
-    #products h1 {
+
+    #product-content h1 {
         font-size: 30px;
     }
-    #pimage {
+
+    #prod-image {
         height: 300px;
         width: 40%;
         background-repeat: no-repeat;
         background-size: contain;
         padding-left: 33%;
     }
-    #pfooter {
-        background-color: beige;
-        /*color: #000000;*/
+
+    #page-footer {
+        background-color: #ffffff;
+        color: #000000;
         padding: .5em;
         margin-bottom: 2em;
         font-size: 12px;
         text-align: center;
     }
-    #pfooter p {
+
+    #page-footer p {
         margin: 0;
     }
+
     noscript {
         color: #ffffff;
     }
+
     .column_title {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-   .copyright {
+
+    .copyright {
         text-align: center;
         font-weight: lighter;
         color: black;
         letter-spacing: 2px;
         border-top-width: 2px;
-        font-family: Helvetica, sans-serif;
+        font-family: "Source Sans Pro";
     }
+
 }

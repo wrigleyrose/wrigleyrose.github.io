@@ -1,48 +1,128 @@
 <!doctype html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <title>Acme Inc.</title>
-    <meta name="description" content="acme project">
-    <meta name="viewport" content="width=device-width">
-    <link href="/acme/css/template.css" rel="stylesheet" type="text/css" media="screen">
+    <title>ACME</title>
+    <meta name="description" content="ACME Inc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/acme/css/template.css">
+
 </head>
 
-
-<body>
-    <div id="white">
-    <header>
-        <div id="branding">
-            <img src="/acme/images/site/logo.png" id="logo" alt="site logo">
+<body id="body">
+    <div class="body-cont">
+        <header id="page-header">
+            <script src="/acme/js/template.js"></script>
+        </header>
+        <div class="primary_header">
+            <img id="logo" src="/acme/images/site/logo.png" alt="acme logo">
         </div>
-    <nav>
-        <ul>
-            <li><a href="/acme/index.html" title="Return to Home Page.">Home</a></li>
-            <li><a href="#" title="Return to Anvils Page.">Anvils</a></li>
-            <li><a href="#" title="Return to Explosives Page.">Explosives</a></li>
-            <li><a href="#" title="Return to Decoys Page.">Decoys</a></li>
-            <li><a href="#" title="Return to Traps Page.">Traps</a></li>
-        </ul>
-    </nav>
-    </header>
-    <main>
-        <section id="content">
-            <b>Welcome to Acme!</b>
-        </section>
-        
-        <section>
-        
-        </section>
-        
-        <section>
-        
-        </section>
-    
-    </main>
-    <footer>
-        &copy; 2018 ACME, All rights reserved. <br> All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.
-    </footer>
+        <nav id="nav">
+            <noscript id="noscript">Enable JavaScript for this site to function.</noscript>
+            <ul>
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Anvils">Anvils</a></li>
+                <li><a href="#" title="Explosive">Explosive</a></li>
+                <li><a href="#" title="Decoys">Decoys</a></li>
+                <li><a href="#" title="Traps">Traps</a></li>
+            </ul>
+        </nav>
+
+        <main id="page">
+
+            <section id="home-content">
+                <section class="main-cont">
+                    <h1 id="wel">Welcome to Acme!</h1>
+                    <section class="picture">
+
+                        <section class="feat">
+                            <h3 id="fhead">Acme Rocket</h3>
+                            <ul class="flist">
+                                <li>Quick lighting fuse.</li>
+                                <li>NHTSA approved seat belts.</li>
+                                <li>Mobile launch stand included.</li>
+                            </ul>
+
+                            <a href="/acme/acme.html"><img id="actionbtn" alt="Add to cart button" src="/acme/images/site/iwantit.gif"></a>
+
+                        </section>
+                    </section>
+                </section>
+
+                <div class="main-display">
+                    <div id="other-content">
+                        <div id="recipes">
+                            <h3 id="feat-recs">Featured Recipes</h3>
+                            <div class="left-links" id="recs-cont">
+
+                                <figure>
+                                    <img class="yum" src="/acme/images/recipes/bbqsand.jpg" alt="Pulled Sandwich">
+                                    <figcaption>
+                                        <a href="#" title="Sandwich">Pulled Roadrunner BBQ Sandwich</a>
+                                    </figcaption>
+                                </figure>
+
+                                <figure>
+                                    <img class="eat" src="/acme/images/recipes/potpie.jpg" alt="Roadrunner Pot Pie">
+                                    <figcaption>
+                                        <a href="#" title="Potpie">Roadrunner Pot Pie</a>
+                                    </figcaption>
+                                </figure>
+
+                                <figure>
+                                    <img class="eat" src="/acme/images/recipes/soup.jpg" alt="Roadrunner soup">
+                                    <figcaption>
+                                        <a href="#" title="Soup">Roadrunner Soup</a>
+                                    </figcaption>
+                                </figure>
+
+                                <figure>
+                                    <img class="eat" src="/acme/images/recipes/taco.jpg" alt="Roadrunner Tacos">
+                                    <figcaption>
+                                        <a href="#" title="Tacos">Roadrunner Tacos</a>
+                                    </figcaption>
+                                </figure>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="right-links">
+                        <br>
+                        <h3>Acme Rocket Reviews</h3>
+                        <ul>
+                            <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
+                            <li>"That thing was fast!" (4/5)</li>
+                            <li>"Talk about fast delivery." (5/5)</li>
+                            <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
+                            <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="products">
+                <h1 id="product-name"></h1>
+                <section id=pzone>
+                    <section id=pimage></section>
+                    <section id="description"></section>
+                </section>
+            </section>
+
+            <footer>
+
+                <section id="pfooter">
+                    <hr>
+                    <section class="copyright">
+                        <p>&copy; 2018 ACME, All rights reserved.</p>
+                        <p>All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</p>
+                    </section>
+                </section>
+            </footer>
+        </main>
     </div>
 </body>
 
