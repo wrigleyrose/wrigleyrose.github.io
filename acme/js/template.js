@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var jsonData;
 
-    document.getElementById("product-content").style.display = "none";
+    document.getElementById("products").style.display = "none";
 
     $.getJSON("/acme/js/acme.json", function (data) {
         jsonData = data;
@@ -15,25 +15,25 @@ $(document).ready(function () {
             output += '</li>';
         });
         output += '</ul>';
-        $("#page-nav").html(output);
+        $("#nav").html(output);
     });
 
-    $("#page-nav").on("click", "a", function (evt) {
+    $("#nav").on("click", "a", function (evt) {
         evt.preventDefault();
         var pageName = $(this).text();
         console.log("You clicked: " + pageName);
 
         if (pageName == "Home") {
             document.getElementById("home-content").style.display = "inline";
-            document.getElementById("product-content").style.display = "none";
-            document.getElementById("right_article").style.display = "inline";
+            document.getElementById("products").style.display = "none";
+            document.getElementById("right-link").style.display = "inline";
             $("title").text("ACME");
 
         } else {
 
             document.getElementById("home-content").style.display = "none";
-            document.getElementById("product-content").style.display = "inline";
-            document.getElementById("right_article").style.display = "none";
+            document.getElementById("products").style.display = "inline";
+            document.getElementById("right-links").style.display = "none";
 
 
             var name = jsonData[pageName].name;
@@ -52,14 +52,14 @@ $(document).ready(function () {
             $("title").text("ACME " + pageName);
             $("#prodtitle").html(name);
             $("#product-name").text(name);
-            $("#prod-image").css("background-image", "url(" + path + ")");
+            $("#pimage").css("background-image", "url(" + path + ")");
             var output = '';
             output += "<li>" + description + "</li> <br>";
             output += '<li><strong>Made by: </strong>' + manufacturer + '</li>' + '<br>';
             output += '<li><strong>Reviews: </strong>' + reviews + '/5 stars</li>';
             output += '<li><h2>Price: $' + price + '</h2></li>';
-            $("#prod-description").html(output);
-            $("#prod-description h2").css("color", "#de2226");
+            $("#description").html(output);
+            $("#description h2").css("color", "#de2226");
         }
 
     });
