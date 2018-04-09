@@ -1,504 +1,212 @@
+/******************
+*1. General
+*2. Mobile
+*3. Large
+*******************/
+
+
+/******
+*1. General
+******/
+
 body {
-    display: flex;
-    font-family: sans-serif;
-    font-size: 18px;
     background-image: url(/acme/images/site/background.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1200px;
-    align-content: center;
-    margin: auto;
+    background-repeat: no-repeat;
 }
 
-main {
+#body-look {
+    background-color: white;
+}
+
+footer {
+    border-top: 3px solid black;
+    text-align: center;
+}
+
+#title {
+    font-size: 2.5em;
+    margin-bottom: 2px;
+}
+
+#navigation {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: inherit;
     display: flex;
-    flex-flow: column;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    margin: 5%;
-    background-color: #ffffff;
-    margin: auto;
-    width: 80%;
-    min-width: 600px;
-}
-
-.main-cont {
+    justify-content: flex-start;
+    font-size: 1em;
+    background-color: crimson;
+    color: white;
+    padding-top: 10px;
+    list-style: none;
+    font-size: inherit;
     width: auto;
 }
 
-.picture {
-    background-image: url('/acme/images/site/feature.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 850px;
-    color: #990033;
+#navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navigation :hover {
+    background-color: white;
+    color: black;
+}
+
+#navigation li {
+    margin: 0px;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#recipes #main-image {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
-.picture img {
-    max-width: 230px;
-}
-
-.feat {
-    height: 400px;
-    padding-right: 35px;
-}
-
-#fhead {
-    font-size: 28px;
-}
-
-.flist {
-    font-size: 20px;
-    list-style: none;
-    padding-left: 0;
-}
-
-.main-cont h1 {
-    font-size: 40px;
+#recipes .box {
+    width: 45%;
+    height: 45%;
     text-align: center;
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    padding: 3px;
 }
 
-#nav {
-    background-color: #de2226;
-    bottom: 0;
-    left: 0;
+.show {
+    display: block;
+}
+
+.hide {
+   display: none; 
+}
+
+#hello {
+    color: crimson;
+    position: absolute;
+    list-style: none;
+    text-align: left;
+    right: 3%;
+    top: 40%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+#rocket #feat-prod {
+    font-size: 2em;
+}
+
+#rocket #want {
+    
+}
+
+#rocket #main-feat {
     width: 100%;
 }
 
-#nav ul {
-    display: flex;
-    align-items: stretch;
-    height: 2.5em;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+#name {
+    font-size: 2.5em;
+    margin: 0px;
 }
 
-#nav li {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-#nav a {
-    text-decoration: none;
-    color: #ffffff;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-#nav a:hover {
-    background-color: #ffffff;
-    color: #000;
-}
-
-.wrapper {
-    display: flex;
-}
-
-.wrapper div {
+#prod-main {
     display: flex;
     flex-direction: column;
-    margin: 3%;
-    text-align: center;
 }
 
-.wrapper div img {
-    width: 70px;
-    margin: 0 auto;
+#information {
+    font-size: 1.25em;
 }
 
-#feat-recs {
-    margin-left: 16px;
+#information #price {
+    color: crimson;
 }
 
-.reviews {
-    margin-right: 40px;
-    margin-left: 10px;
-}
-
-.main-display {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-
-#recs-cont {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
-    width: 25em;
-}
-
-.yum {
-    border-left-width: 20px;
-    border-right-width: 20px;
-    border-bottom-width: 4px;
-    border-color: lightgray;
-    border-style: solid;
-    width: 5em;
-}
-
-figure {
-    width: 31%;
-    text-align: center;
-    margin: 10px;
-}
-
-.body-cont {
-    background-color: #ffffff;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom-width: 0px;
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-}
-
-.secondary_header {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #ff0000;
-    clear: left;
-}
-
-.left-links {
-    background-color: #ffffff;
-    width: 50%;
-    /*float: left;*/
-    font-family: Helvetica, sans-serif;
-    color: #343434;
-    padding-bottom: 18px;
-}
-
-.noDisplay {
-    display: none;
-}
-
-.main-cont .left-links h1 {
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 5%;
-    color: #717070;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-#reviews {
-    width: 400px;
-}
-
-#reviews h3 {
-    margin-top: 1px;
-    margin-bottom: 1px;
-}
-
-#right-links {
-    width: 45%;
-    background-color: #ffffff;
-    font-family: Helvetica, sans-serif;
-}
-
-#products {
-    display: flex;
-}
-
-#description {
-    height: 300px;
-    background-repeat: no-repeat;
-    list-style: none;
-    justify-content: flex-end;
-    margin-left: 8%;
-    padding-right: 8%
-}
-
-#pzone {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 3;
-}
-
-#products h1 {
-    font-size: 40px;
-}
-
-#pimage {
-    height: 350px;
-    width: 60%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-left: 33%;
-}
-
-#pfooter {
-    background-color: beige;
-    /*color: #000000;*/
-    padding: .5em;
-    margin-bottom: 2em;
-    font-size: 13px;
-    text-align: center;
-}
-
-#pfooter p {
-    margin: 0;
-}
-
-noscript {
-    color: #ffffff;
-}
-
-.column_title {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.copyright {
-    text-align: center;
-    color: black;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    border-top-width: 2px;
-    font-family: Helvetica, sans-serif;
-}
+/***************
+*2. Mobile
+*************/
 
 
-/*Large Screen*/
+/*************
+*3. Large
+************/
 
-@media only screen and (max-width: 1000px) {
-    #body {
-        display: flex;
-        font-size: 18px;
-        background-image: url("/acme/images/site/background.jpg");
-        background-size: cover;
-        max-width: 1100px;
-        align-content: center;
-        margin: auto;
-        font-family: sans-serif;
-    }
-    #page {
-        display: flex;
-        flex-flow: column;
-        flex-wrap: nowrap;
-        align-items: stretch;
-        margin: 3%;
-        background-color: #fff;
+@media screen and (min-width: 760px) {
+    
+    body > div {
+       max-width: 1100px;
         margin: 0 auto;
-        width: 80%;
-        min-width: 600px;
     }
-    #wel {
-        text-align: left;
-        margin: 0.25em 0;
-    }
-    .main-cont {
-        width: auto;
-    }
-    .picture {
-        background-image: url('/acme/images/site/feature.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        max-width: 950px;
-        color: #990033;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .picture img {
-        max-width: 227px;
-    }
-    .fhead {
-        height: 250px;
-        padding-right: 15px;
-    }
-    .flist {
-        font-size: 15px;
+    
+    #hello {
+        color: crimson;
+        position: absolute;
         list-style: none;
-        padding-left: 0;
+        text-align: left;
+        right: 5%;
+        top: 30%;
     }
-    .main-cont h1 {
-        font-size: 40px;
-        text-align: center;
+    
+    #rocket #feat-prod {
+        font-size: 3em;
     }
-    #nav {
-        background-color: #de2226;
-        bottom: 0;
-        left: 0;
+    
+    #rocket {
+        font-size: 1.25em;
+    }
+    
+    #rocket #want {
+        
+    }
+    
+    #rocket #main-feat {
         width: 100%;
     }
-    #nav ul {
+    
+    #box {
         display: flex;
-        align-items: stretch;
-        height: 2.5em;
-        margin: 0;
-        padding: 0;
-        list-style: none;
     }
-    #nav li {
+    
+    #box #reviews {
+        order: 2;
+        flex: 1.5;
+        font-size: 1.5em;
+    }
+    
+    #box #recipes {
         flex: 1;
-        display: flex;
-        justify-content: center;
-        font-size: 20px;
+        font-size: 1.5em;
     }
-    #nav a {
-        text-decoration: none;
-        color: #ffffff;
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
+    
+    #name {
+        margin: auto;
     }
-    #nav a:hover {
-        background-color: #ffffff;
-        color: #000;
+    
+    #prod-main {
+        flex-direction: row;
+        margin-bottom: 20px;
     }
-    .wrapper {
-        display: flex;
+    
+    #prod-main #image {
+        
     }
-    .wrapper div {
+    
+    #information {
+        margin: 10px;
+        flex: 1.5;
         display: flex;
         flex-direction: column;
-        margin: 3%;
-        text-align: center;
+        font-size: 1.5em;
     }
-    .wrapper div img {
-        width: 70px;
-        margin: 0 auto;
-    }
-    #right-links {
-        width: 370px;
-    }
-    #right-links h3 {
-        margin-top: -14px;
-        margin-bottom: -10px;
-    }
-    .main-display {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    #recipes {
-        width: 500px;
-    }
-    #recipes h3 {
-        margin: 5px 0 -5px 0;
-    }
-    #feat-recs {
-        display: flex;
-        flex-flow: row wrap;
-        list-style: none;
-        flex-grow: 1;
-        width: 25em;
-    }
-    .yum {
-        border-left-width: 20px;
-        border-right-width: 20px;
-        border-bottom-width: 4px;
-        border-color: lightgray;
-        border-style: solid;
-        width: 5em;
-    }
-    figure {
-        width: 30%;
-        text-align: center;
-        margin: 8px;
-    }
-    .main-cont {
-        background-color: #ffffff;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        border-bottom-width: 0px;
-        padding-left: 0px;
-        padding-top: 0px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-    }
-    .secondary_header {
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        background-color: #ff0000;
-        clear: left;
-    }
-    .left-links {
-        background-color: #ffffff;
-        width: 60%;
-        float: left;
-        font-family: "Source Sans Pro";
-        color: #343434;
-        padding-bottom: 15px;
-    }
-    .noDisplay {
-        display: none;
-    }
-    .main-cont .left-links h1 {
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-top: 5%;
-        color: #717070;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .right-links {
-        width: 40%;
-        float: left;
-        background-color: #ffffff;
-    }
-    #products {
-        display: flex;
-    }
-    #description {
-        height: 150px;
-        background-repeat: no-repeat;
-        list-style: none;
-        justify-content: flex-end;
-        margin-left: 4%;
-        padding-right: 4%
-    }
-    #pzone {
-        display: flex;
-        flex-direction: row;
-        flex-grow: 3;
-    }
-    #products h1 {
-        font-size: 30px;
-    }
-    #pimage {
-        height: 300px;
-        width: 40%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding-left: 33%;
-    }
-    #pfooter {
-        background-color: beige;
-        /*color: #000000;*/
-        padding: .5em;
-        margin-bottom: 2em;
-        font-size: 12px;
-        text-align: center;
-    }
-    #pfooter p {
-        margin: 0;
-    }
-    noscript {
-        color: #ffffff;
-    }
-    .column_title {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-   .copyright {
-        text-align: center;
-        font-weight: lighter;
-        color: black;
-        letter-spacing: 2px;
-        border-top-width: 2px;
-        font-family: Helvetica, sans-serif;
+    
+    #information #price {
+        color: crimson;
     }
 }

@@ -1,66 +1,59 @@
-$(document).ready(function () {
+var list = document.getElementById("navigation");
+var main = document.getElementById("main-nav");
+var prod = document.getElementById("products");
+var index = document.getElementById("home");
 
-    var jsonData;
+//function to build template page
 
-    document.getElementById("products").style.display = "none";
+function mainBuid(acme) {
+    console.log(acme.name);
+    document.getElementById("name").innerHTML = acme.name;
+    document.getElementById("description").innerHTML = acme.description;
+    document.getElementById("path").src = acme.path;
+    document.getElementById("manufacturer").innerHTML = "<b>Made by: </b>" + acme.manufacturer;
+    document.getElementById("reviews").innerHTML = "<b>Reviews: </b>" + acme.reviews;
+    document.getElementById("price").innerHTML = "$" + acme.price;
+}
 
-    $.getJSON("/acme/js/acme.json", function (data) {
-        jsonData = data;
-        console.log(jsonData);
-        var output = '<ul>';
-        output += '<li><a href="#" title="Home">Home</a></li>';
-        $.each(data, function (key, value) {
-            output += '<li>';
-            output += '<a href="//google.com" title="' + key + '">' + key + '</a>';
-            output += '</li>';
-        });
-        output += '</ul>';
-        $("#nav").html(output);
-    });
+function getData(X) {
 
-    $("#nav").on("click", "a", function (evt) {
-        evt.preventDefault();
-        var pageName = $(this).text();
-        console.log("You clicked: " + pageName);
+    console.log(X);
 
-        if (pageName == "Home") {
-            document.getElementById("home-content").style.display = "inline";
-            document.getElementById("products").style.display = "none";
-            document.getElementById("right-link").style.display = "inline";
-            $("title").text("ACME");
+    fetch("/acme/js/acme.json")
+        .then(response => response.json())
+        .then(function (acme) {
 
-        } else {
+            acme = acme[X];
+            console.log(acme);
+            pageBuild(acme);
 
-            document.getElementById("home-content").style.display = "none";
-            document.getElementById("products").style.display = "inline";
-            document.getElementById("right-links").style.display = "none";
+        })
+        // send acme to display function
+        .catch(error => console.log('Error found: ', error))
+}
 
+/*build function pageBuild*/
 
-            var name = jsonData[pageName].name;
-            var path = jsonData[pageName].path;
-            var description = jsonData[pageName].description;
-            var manufacturer = jsonData[pageName].manufacturer;
-            var price = jsonData[pageName].price;
-            var reviews = jsonData[pageName].reviews;
-            console.log(name);
-            console.log(path);
-            console.log(description);
-            console.log(manufacturer);
-            console.log(price);
-            console.log(reviews);
+function pageBuild() {
 
-            $("title").text("ACME " + pageName);
-            $("#prodtitle").html(name);
-            $("#product-name").text(name);
-            $("#pimage").css("background-image", "url(" + path + ")");
-            var output = '';
-            output += "<li>" + description + "</li> <br>";
-            output += '<li><strong>Made by: </strong>' + manufacturer + '</li>' + '<br>';
-            output += '<li><strong>Reviews: </strong>' + reviews + '/5 stars</li>';
-            output += '<li><h2>Price: $' + price + '</h2></li>';
-            $("#description").html(output);
-            $("#description h2").css("color", "#de2226");
-        }
+    event.preventDefault();
 
-    });
-})
+    let X = event.target.innerHTML;
+    if (X.includes("home") || X == undefined) {
+        return false;
+    }
+
+    getData(X);
+    main.setAttribute("class", "hide");
+    prod.setAttribute("class", "show");
+
+}
+
+function home() {
+    main.setAttribute("class", "show");
+    prod.setAttribute("class", "hide");
+event.stopImmediatePropagation();
+}
+
+list.addEventListener("click", pageBuild, false);
+index.addEventListener("click", home, true);

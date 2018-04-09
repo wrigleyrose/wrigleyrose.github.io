@@ -11,119 +11,95 @@
 
 </head>
 
-<body id="body">
-    <div class="body-cont">
-        <header id="page-header">
-            <script src="/acme/js/template.js"></script>
-        </header>
-        <div class="primary_header">
-            <img id="logo" src="/acme/images/site/logo.png" alt="acme logo">
-        </div>
-        <nav id="nav">
-            <noscript id="noscript">Enable JavaScript for this site to function.</noscript>
-            <ul>
-                <li><a href="#" title="Home">Home</a></li>
-                <li><a href="#" title="Anvils">Anvils</a></li>
-                <li><a href="#" title="Explosive">Explosive</a></li>
-                <li><a href="#" title="Decoys">Decoys</a></li>
-                <li><a href="#" title="Traps">Traps</a></li>
+<body>
+    <div id="body-look">
+        <nav>
+            <img src="/acme/images/site/logo.png" title="ACME logo" alt="ACME logo">
+            <ul id="navigation">
+                <li id="home"><a href="index.html" title="Go to ACME homepage.">Home</a></li>
+                <li><a href="#">Anvils</a></li>
+                <li><a href="#">Explosives</a></li>
+                <li><a href="#">Decoys</a></li>
+                <li><a href="#">Traps</a></li>
             </ul>
         </nav>
-
-        <main id="page">
-
-            <section id="home-content">
-                <section class="main-cont">
-                    <h1 id="wel">Welcome to Acme!</h1>
-                    <section class="picture">
-
-                        <section class="feat">
-                            <h3 id="fhead">Acme Rocket</h3>
-                            <ul class="flist">
-                                <li>Quick lighting fuse.</li>
-                                <li>NHTSA approved seat belts.</li>
-                                <li>Mobile launch stand included.</li>
-                            </ul>
-
-                            <a href="/acme/acme.html"><img id="actionbtn" alt="Add to cart button" src="/acme/images/site/iwantit.gif"></a>
-
-                        </section>
-                    </section>
+        <main>
+        <section class="show" id="main-nav">
+            <h1 id="title">Welcome to ACME!</h1>
+            <section id="rocket">
+            <ul id="hello">
+                <li id="feat-prod"><b>ACME rocket</b></li>
+                <li>Quick Lighting Fuse</li>
+                <li>NHTSA Approved Seat Belts</li>
+                <li>Mobile Launch Stand Included</li>
+                <li><img src="/acme/images/site/iwantit.gif" alt="I want it button" id="want"></li>
+                </ul>
+                <img src="images/site/feature.jpg" alt="feature photo of wile e. coyote" id="main-feat">
+            </section>
+            <div id="box">
+            <section id="reviews">
+                <h2>ACME Rocket Review</h2>
+                <ul>
+                <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
+                <li>"That thing was fast!" (4/5)</li>
+                <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
+                <li>"I'm on my thertieth one. I love these things!" (5/5)</li>
+                </ul>
                 </section>
-
-                <div class="main-display">
-                    <div id="other-content">
-                        <div id="recipes">
-                            <h3 id="feat-recs">Featured Recipes</h3>
-                            <div class="left-links" id="recs-cont">
-
-                                <figure>
-                                    <img class="yum" src="/acme/images/recipes/bbqsand.jpg" alt="Pulled Sandwich">
-                                    <figcaption>
-                                        <a href="#" title="Sandwich">Pulled Roadrunner BBQ Sandwich</a>
-                                    </figcaption>
-                                </figure>
-
-                                <figure>
-                                    <img class="eat" src="/acme/images/recipes/potpie.jpg" alt="Roadrunner Pot Pie">
-                                    <figcaption>
-                                        <a href="#" title="Potpie">Roadrunner Pot Pie</a>
-                                    </figcaption>
-                                </figure>
-
-                                <figure>
-                                    <img class="eat" src="/acme/images/recipes/soup.jpg" alt="Roadrunner soup">
-                                    <figcaption>
-                                        <a href="#" title="Soup">Roadrunner Soup</a>
-                                    </figcaption>
-                                </figure>
-
-                                <figure>
-                                    <img class="eat" src="/acme/images/recipes/taco.jpg" alt="Roadrunner Tacos">
-                                    <figcaption>
-                                        <a href="#" title="Tacos">Roadrunner Tacos</a>
-                                    </figcaption>
-                                </figure>
-
-                            </div>
-                        </div>
+            <section id="recipes">
+                <h2>Featured Recipes</h2>
+                <div id="main-image">
+                <div class="box">
+                    <img src="/acme/images/recipes/bbqsand.jpg" title="BBQ Roadrunner Sandwich" alt="BBQ">
+                    <p>Pulled Roadrunner BBQ</p>
                     </div>
-
-
-                    <div id="right-links">
-                        <br>
-                        <h3>Acme Rocket Reviews</h3>
-                        <ul>
-                            <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
-                            <li>"That thing was fast!" (4/5)</li>
-                            <li>"Talk about fast delivery." (5/5)</li>
-                            <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
-                            <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
-                        </ul>
+                <div class="box">
+                    <img src="/acme/images/recipes/potpie.jpg" title="RR Pot Pie" alt="RR Pot Pie">
+                    <p>Roadrunner Pot Pie</p>
+                    </div>
+                <div class="box">
+                    <img src="images/recipes/soup.jpg" title="RR Soup" alt="RR soup">
+                    <p>Roadrunner Soup</p>
+                    </div>
+                    <div class="box">
+                    <img src="images/recipes/taco.jpg" title="RR Taco" alt="RR Taco">
+                    <p>Roadrunner Taco</p>
                     </div>
                 </div>
-            </section>
-
-            <section id="products">
-                <h1 id="product-name"></h1>
-                <section id=pzone>
-                    <section id=pimage></section>
-                    <section id="description"></section>
+                
                 </section>
+            </div>
             </section>
-
-            <footer>
-
-                <section id="pfooter">
-                    <hr>
-                    <section class="copyright">
-                        <p>&copy; 2018 ACME, All rights reserved.</p>
-                        <p>All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</p>
-                    </section>
-                </section>
-            </footer>
+        <section class="hide" id="products">
+            <h1 id="name">All Purpose Trap</h1>
+            <div id="prod-main">
+            <img src="images/products/trap.jpg" id="image" alt="product image">
+            <div id="information">
+                <p id="description">
+                The Noblel brand TNT is famous for its power and ability to get the job done. Buried or thrown it is guaranteed to blow up and defeather roadrunners all in one fell swoop.
+                </p>
+                <ul>
+                <li id="producer"><b>Made by: </b> Traps R Us</li>
+                <li id="star"><b>Reviews: </b> 4.6/5 Stars</li></ul>
+                
+                <h2 id="price">Price: $20.00</h2>
+                
+                </div>
+            </div>
+            </section>
         </main>
+        
+        <footer>
+        <div>
+            <p>
+            &copy; ACME, All rights reserved.
+            </p>
+            <p>
+            All images used are believed to be in "Fair Use". Please notify the author. If they are not, they will be removed.
+            </p>
+            </div>
+        </footer>
     </div>
-</body>
-
+    <script src="/acme/js/template.js"></script>
+    </body>
 </html>
