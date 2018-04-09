@@ -25,14 +25,14 @@ function getData(X) {
 
             acme = acme[X];
             console.log(acme);
-            pageBuild(acme);
+            mainBuid(acme);
 
         })
-        // send acme to display function
+        // send 'acme' to display function
         .catch(error => console.log('Error found: ', error))
 }
 
-/*build function pageBuild*/
+/*build function to get nav*/
 
 function pageBuild() {
 
